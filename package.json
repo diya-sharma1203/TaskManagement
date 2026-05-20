@@ -1,0 +1,11 @@
+{
+  "name": "team-task-manager-root",
+  "version": "1.0.0",
+  "description": "Monorepo root for Team Task Manager",
+  "private": true,
+  "scripts": {
+    "postinstall": "npm install --prefix server && npm install --prefix client",
+    "build": "npm run build --prefix client && npm run build --prefix server",
+    "start": "npm start --prefix server"
+  }
+}
